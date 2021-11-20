@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>TicTacToe</title>
+    <meta charset="utf-8" lang="en">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="ALL">
+        <h1>TiC TaC ToE</h1>
+        <h3>2 Player Mode</h3>
+
+        <div id="mainBox">
+            <div class="playBoxes" id="playBox1" onclick="setItem('playBox1', '0', '0')"></div>
+            <div class="playBoxes" id="playBox2" onclick="setItem('playBox2', '0', '1')"></div>
+            <div class="playBoxes" id="playBox3" onclick="setItem('playBox3', '0', '2')"></div>
+            <div class="playBoxes" id="playBox4" onclick="setItem('playBox4', '1', '0')"></div>
+            <div class="playBoxes" id="playBox5" onclick="setItem('playBox5', '1', '1')"></div>
+            <div class="playBoxes" id="playBox6" onclick="setItem('playBox6', '1', '2')"></div>
+            <div class="playBoxes" id="playBox7" onclick="setItem('playBox7', '2', '0')"></div>
+            <div class="playBoxes" id="playBox8" onclick="setItem('playBox8', '2', '1')"></div>
+            <div class="playBoxes" id="playBox9" onclick="setItem('playBox9', '2', '2')"></div>
+        </div>
+
+        <div id="erg"></div>
+
+        <div id="subBox1">
+            <button id="resetGame" onclick="resetGame()">RESET CURRENT GAME</button>
+            <button id="resetScore" onclick="resetScore()">RESET SCORE</button>
+        </div>
+        <div id="subBox2">
+            <div class="subSubDiv">
+                <input type="text" placeholder="INPUT NAME OF PLAYER 1" id="inputPlayer1">
+                <button id="setNamePlayer1" onclick="setNamePlayer1()">SET NAME OF PLAYER 1</button>
+            </div>
+            <div class="subSubDiv">
+                <input type="text" placeholder="INPUT NAME OF PLAYER 2" id="inputPlayer2">
+                <button id="setNamePlayer2" onclick="setNamePlayer2()">SET NAME OF PLAYER 2</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

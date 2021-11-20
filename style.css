@@ -1,0 +1,109 @@
+body {
+    color: white;
+    background-color: black;
+    overflow: scroll;
+}
+
+#ALL {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.subSubDiv {
+    margin: 0;
+    display: block;
+}
+
+#playBox1 { grid-area: playBox1; }
+#playBox2 { grid-area: playBox2; }
+#playBox3 { grid-area: playBox3; }
+#playBox4 { grid-area: playBox4; }
+#playBox5 { grid-area: playBox5; }
+#playBox6 { grid-area: playBox6; }
+#playBox7 { grid-area: playBox7; }
+#playBox8 { grid-area: playBox8; }
+#playBox9 { grid-area: playBox9; }
+
+#mainBox {
+    width: 20em;
+    height: 20em;
+    display: grid;
+    grid-template-areas:
+        'playBox1 playBox2 playBox3'
+        'playBox4 playBox5 playBox6'
+        'playBox7 playBox8 playBox9';
+    grid-gap: 5px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#mainBox > div {
+    text-align: center;
+    padding: 2em;
+    opacity: 0.55;
+    background-color: white;
+    border-radius: 15%;
+    transition: opacity 1.5s;
+}
+
+#mainBox > div:hover {
+    opacity: 1;
+}
+
+#erg {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    margin-top: 1em;
+}
+
+h1, h3 {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+h1 {
+    font-size: 350%;
+    margin: 0.75em 0 0 0;
+}
+
+h3 {
+    font-size: 170%;
+    margin-top: 0;
+}
+
+button, input { 
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Comfortaa', cursive;
+    background-color: white;
+    border-radius: 10%;
+    opacity: 0.55;
+    transition: opacity 1.5s;
+}
+
+button:hover, input:hover {
+    opacity: 1;
+}
+
+input {
+    width: 35%;
+}
+
+button {
+    width: 35%;
+}
+
+#subBox1 {
+    float: left;
+    padding: 2% 2% 2% 15%;
+}
+
+#subBox2 {
+    float: right;
+    padding: 2%;
+    width: 50%;
+}
