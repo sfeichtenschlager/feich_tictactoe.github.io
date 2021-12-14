@@ -1,7 +1,7 @@
 body {
     color: white;
     background-color: black;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 #ALL {
@@ -11,6 +11,11 @@ body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 100%;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    overflow: scroll;
 }
 
 .subSubDiv {
